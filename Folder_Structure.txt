@@ -1,0 +1,67 @@
+                          Folder_structure
+                                 |
+  -----------------------------------------------------
+  |                                                   |
+  |                                                   |
+ECU-1                                                 ECU-2
+|---APPLICATION-1                                     |---APPLICATION-2
+|       main.c                                        |       main.c
+|                                                     |
+|---CONFIG                                            |---CONFIG
+|       CAN_config.h                                  |       Buzzer_config.h
+|       DIO_config.h                                  |       CAN_config.h
+|       Door_Sensor_config.h                          |       DIO_config.h
+|       EXTI_config.h                                 |       EXTI_config.h
+|       Light_Switch_config.h                         |       Left_Light_config.h
+|       Port_config.h                                 |       Port_config.h
+|       Speed_Sensor_config.h                         |       Right_Light_config.h
+|       Timer_config.h                                |       Timer_config.h
+|                                                     |
+|---HAL                                               |---HAL
+|   |---Door_Sensor                                   |   |---Buzzer
+|   |       Door_Sensor_private.h                     |   |       Buzzer_private.h
+|   |       Door_Sensor_program.c                     |   |       Buzzer_program.c
+|   |                                                 |   |
+|   |---Light_Switch                                  |   |---Left_Light
+|   |       Light_Switch_private.h                    |   |       Left_Light_private.h
+|   |       Light_Switch_program.c                    |   |       Left_Light_program.c
+|   |                                                 |   |
+|   |---Speed_Sensor                                  |   |---Right_Light
+|           Speed_Sensor_private.h                    |           Right_Light_private.h
+|           Speed_Sensor_program.c                    |           Right_Light_program.c
+|                                                     |
+|---INCLUDE                                           |---INCLUDE
+|       CAN_interface.h                               |       Buzzer_interface.h
+|       DIO_interface.h                               |       CAN_interface.h
+|       Door_Sensor_interface.h                       |       DIO_interface.h
+|       EXTI_interface.h                              |       EXTI_interface.h
+|       Light_Switch_interface.h                      |       Left_Light_interface.h
+|       Port_interface.h                              |       Port_interface.h
+|       Speed_Sensor_interface.h                      |       Right_Light_interface.h
+|       Timer_interface.h                             |       Timer_interface.h
+|                                                     |
+|---LIB                                               |---LIB
+|---MCAL                                              |---MCAL
+|   |---CAN                                           |   |---CAN
+|   |       CAN_private.h                             |   |       CAN_private.h
+|   |       CAN_program.c                             |   |       CAN_program.c
+|   |                                                 |   |
+|   |---DIO                                           |   |---DIO
+|   |       DIO_private.h                             |   |       DIO_private.h
+|   |       DIO_program.c                             |   |       DIO_program.c
+|   |                                                 |   |
+|   |---EXTI                                          |   |---EXTI
+|   |       EXTI_private.h                            |   |       EXTI_private.h
+|   |       EXTI_program.c                            |   |       EXTI_program.c
+|   |                                                 |   |
+|   |---Port                                          |   |---Port
+|   |       Port_private.h                            |   |       Port_private.h
+|   |       Port_program.c                            |   |       Port_program.c
+|   |                                                 |   |
+|   |---Timer                                         |   |---Timer
+|           Timer_private.h                           |           Timer_private.h
+|           Timer_program.c                           |           Timer_program.c
+|                                                     |
+|---OS                                                |---OS
+|---SERVICE                                           |---SERVICE
+
